@@ -37,3 +37,31 @@
     width: 100% !important;
     height: 100% !important;
 }
+
+.skill-name .chart:before {
+    content: "";
+    width: 0;
+    height: 100%;
+}
+
+.skill-name .chart:before, .skill-name .percent {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.skill-name .percent {
+    position: relative;
+    line-height: 1;
+    font-size: 40px;
+    font-weight: 900;
+    z-index: 2;
+}
+
+.skill-name .percent:after {
+    content: attr(data-after);
+    font-size: 20px;
+}
+
+p {
+    font-weight: 900;
+}
